@@ -10,4 +10,9 @@ def home():
 def about():
     return {"message": "This is About page"}
     
+@app.get("/users")
+def user(user_name: str):
+    return {"Name": user_name}
+
+    
 
